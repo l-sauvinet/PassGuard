@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>PassGuard</title>
+</head>
+<body>
+  <div id="btnPassword">
+    <h3 class="btn-section">
+      <strong class="title">PassGuard</strong>
+      <button id="open-form-button" title="Ajouter un mot de passe"><h1>+</h1></button>
+    </h3>
+  </div>
+  <div id="form" hidden>
+    <h1>Ajouter mot de passe</h1>
+    <form id="password-form">
+      <input type="text" id="site" placeholder="Adresse du site" required>
+      <input type="text" id="username" placeholder="Nom d'utilisateur" required>
+      <input type="password" id="password" placeholder="Mot de passe" required>
+      <div style="display: flex; flex-direction: row; gap: 20px; width: 100%; align-items: center; justify-content: center;">
+        <button class="goBack">Retour</button>
+        <button type="submit">Enregistrer</button>
+      </div>
+    </form>
+  </div>  
+  <div id="Nopassword-list" class="password-list-large">Il n'y a pas de mot de passe</div>
+  <ul id="password-list" class="password-list-large"></ul>
+  <script src="popup.js"></script>
+</body>
+</html>
