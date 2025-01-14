@@ -10,8 +10,7 @@ let passwordsCache = [];
 document.getElementById("open-form-button").addEventListener("click", () => {
     form.removeAttribute('hidden');
     btn.setAttribute('hidden', '');
-    passwordList.classList.remove('password-list-large');
-    passwordList.classList.add('password-list-small');
+    passwordList.setAttribute('hidden');
 });
 
 // Gestion du retour au menu principal
@@ -19,7 +18,7 @@ document.querySelector(".goBack").addEventListener("click", (e) => {
     e.preventDefault();
     form.setAttribute('hidden', '');
     btn.removeAttribute('hidden');
-    passwordList.classList.remove('password-list-small');
+    passwordList.removeAttribute('hidden');
     passwordList.classList.add('password-list-large');
 });
 
@@ -111,10 +110,10 @@ function updatePasswordList() {
 
         passwordList.innerHTML = passwordsCache.map((p) => `
             <li id="password-item-${p.id}" class="password-item">
-                <strong style="display: flex; align-items: center; gap: 10px;">${p.site}<button title="Aller a l'adresse" class="goto-btn"><img src="./icons/gotourl.svg"></button></strong><br>
+                <strong style="display: flex; align-items: center; gap: 10px;">${p.site}<button title="Aller a l'adresse" class="goto-btn"><img src="../icons/gotourl.svg"></button></strong><br>
                 <span title="Copier identifiant" class="copyable" data-copy="${p.username}">${truncate(p.username, 10)}</span>
                 <span title="Copier mot de passe" class="copyable" data-copy="${p.password}">${truncate(p.password, 10)}</span>
-                <button title="Supprimer mot de passe" class="delete-btn" data-id="${p.id}"><img data-id="${p.id}" src="./icons/trash-icone.svg"></button>
+                <button title="Supprimer mot de passe" class="delete-btn" data-id="${p.id}"><img data-id="${p.id}" src="../icons/trash-icone.svg"></button>
             </li>
         `).join("");
 

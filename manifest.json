@@ -5,7 +5,7 @@
     "description": "Une extension simple pour enregistrer des mots de passe.",
     "permissions": ["storage"],
     "action": {
-      "default_popup": "./popup.html",
+      "default_popup": "./public/popup.html",
       "default_icon": {
         "16": "./icons/icone16.png",
         "48": "./icons/icone48.png",

@@ -81,7 +81,6 @@ button:hover {
 }
 
 #password-list {
-    height: 80px;
     list-style-type: none;
     padding: 5px;
     margin: 0;
@@ -94,7 +93,7 @@ button:hover {
 }
 
 .password-list-small {
-    max-height: 250px;
+    max-height: 150px;
 }
 
 .password-list-large {
