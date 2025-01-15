@@ -1,6 +1,28 @@
 {
-  "password": [],
+  "password": [
+    {
+      "id": "1",
+      "site": "eos.to",
+      "username": "yannick",
+      "password": "mdp",
+      "deleted": true
+    },
+    {
+      "id": "2",
+      "site": "dzqd",
+      "username": "dqd",
+      "password": "dqzd",
+      "deleted": true
+    },
+    {
+      "id": "4",
+      "site": "dzqdq",
+      "username": "dqzd",
+      "password": "dzqdzq",
+      "deleted": false
+    }
+  ],
   "nextId": {
-    "nextId": 1
+    "nextId": 5
   }
 }
